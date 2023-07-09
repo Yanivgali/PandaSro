@@ -1,0 +1,213 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="YanivProject_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js" xml:lang="en">
+<head runat="server">    
+    <title></title>    
+    <link href="stylePage/css/Test.css" rel="stylesheet" />
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+    <script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+    return i;
+}
+    </script> 
+  <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script src="stylePage/js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+  <!-- Syntax Highlighter -->
+    <script src="stylePage/js/shCore.js"></script>
+    <script src="stylePage/js/shBrushXml.js"></script>
+    <script src="stylePage/js/shBrushJScript.js"></script>
+
+  <!-- Optional FlexSlider Additions -->
+    <script src="stylePage/js/jquery.easing.js"></script>
+    <script src="stylePage/js/jquery.mousewheel.js"></script>
+    <script src="stylePage/js/demo.js"></script>
+    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"/>
+    <link href="stylePage/css/Test.css" rel="stylesheet" />
+      <!-- Demo CSS -->
+    <link href="stylePage/css/flexslider.css" rel="stylesheet" />
+    <link href="stylePage/css/demo.css" rel="stylesheet" />
+    	<!-- Modernizr -->
+    <script src="stylePage/js/modernizr.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'/>
+   <link href="stylePage/css/Test.css" rel="stylesheet" />
+    <style>
+/* Dropdown Button */
+.dropbtn {
+  color: #A9A9A9;
+  padding: 14px;
+  font-size: 14px;
+  padding: 10px;
+  font-size: 20px;
+  font-family:'Old English Text MT';
+   border: none;
+}
+        .navbar-inverse .navbar-nav > li > a {
+            padding: 20px;
+            font-size: 20px;
+            font-family: 'Old English Text MT';
+        }  
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    margin-left:-5px;
+    margin-top:20px;
+  position:relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Old English Text MT';
+  display:none;  
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a 
+{
+  position:relative;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #222222;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    color:black;
+    background-color: #222222;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {color:white;}
+        * {
+            cursor: url(Pictures/Cursor/Cursor_1.cur),default;
+        }     
+         #aherf{
+            cursor: url(Pictures/Cursor/Cursor_5.ico),default;
+        } 
+        #aherf:hover{
+            cursor: url(Pictures/Cursor/Cursor_5.ico),default;
+        }        
+        #aherf:active{
+            cursor: url(Pictures/Cursor/Cursor_6.cur),default;
+        }
+        .glyphicon{
+             cursor: url(Pictures/Cursor/Cursor_5.ico),default;
+        } 
+        .glyphicon:hover{
+             cursor: url(Pictures/Cursor/Cursor_5.ico),default;
+        } 
+        .glyphicon:active{
+            cursor: url(Pictures/Cursor/Cursor_6.cur),default;
+        }
+        .expand{
+            cursor: url(Pictures/Cursor/Cursor_5.ico),default;
+        }   
+       .expand:hover{
+            cursor: url(Pictures/Cursor/Cursor_5.ico),default;
+        }
+        .expand:active{
+            cursor: url(Pictures/Cursor/Cursor_6.cur),default;
+        }
+
+    </style>
+    <link rel="icon" href="Pictures/logo.jpg">
+     <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body onload="startTime()" >
+    <form id="form1" runat="server">
+        <div id="NavbarHeader">                    
+   <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <ul class="navbar-brand" text="PandaSro"></ul><img src="Pictures/logo.jpg" class="active" onclick="" id="logo"/>
+    </div>
+    <ul class="nav navbar-nav">
+      <li style="width:120px; height:35px; position:absolute;"><span class="glyphicon glyphicon-home" style="font-size:18px; position:absolute; margin-top:15%;"></span><a href="HomePage.aspx" class="expand" id="aherf">HomePage</a></li>
+      <li style="width:120px; height:35px; position:absolute; margin-left:10%;"><span class="glyphicon glyphicon-download-alt" style="position:absolute; font-size:18px; margin-top:15%;"></span><a href="Downloads.aspx" class="expand" id="aherf">Downloads</a></li>
+      <li runat="server" id="Li2"  style="width:120px; height:35px; position:absolute; margin-left:27%; margin-top:3px;"><span class="glyphicon glyphicon-plus" style="font-size:18px; position:absolute; margin-top:15%;"></span><a href="coupongift.aspx" id="aherf" class='expand'>Gift User</a></li>
+        <div class="dropdown" style="margin-left:20%; position:absolute;">
+      <li class="glyphicon glyphicon-shopping-cart"><a href="#" class="dropbtn">Store</a></li>
+     <div class="dropdown-content">
+      <li runat="server" id="Catalog" style="width:80px; height:35px;"><span class="glyphicon glyphicon-shopping-cart" style="font-size:18px;" aria-posinset="1"></span><a href="Store.aspx" id="aherf" style="bottom:25px; left:5px;background: url(klematis.jpg) repeat; color:white;" class='expand'>Catalog</a></li>
+      <li runat="server" id="store2" style="width:80px; height:25px;"><span class="glyphicon glyphicon-shopping-cart" style="font-size:18px; margin-top:15%;"aria-posinset="2"></span><a href="Store2.aspx" id="aherf" style="bottom:25px; left:5px; background: url(klematis.jpg) repeat; color:white;" class='expand'>Store</a></li>
+      <li runat="server" id="Admin1" style="width:80px; height:35px;"><span class="glyphicon glyphicon-plus" style="font-size:18px; margin-top:12%;"></span><a href="AddToStore.aspx" id="aherf" style="bottom:25px; left:5px; background: url(klematis.jpg) repeat; color:white;" class='expand'>AddtoStore</a></li>
+      <li runat="server" id="adminstore" style="width:90px; height:50px;"><span class="glyphicon glyphicon-floppy-saved" style="font-size:18px; margin-top:12%;"></span><a href="UpdateStore.aspx" id="aherf" style="bottom:25px; left:5px; background: url(klematis.jpg) repeat; color:white;" class='expand'>UpdateStore</a></li>
+      <li runat="server" id="admin2" style="width:80px; height:25px;"><span class="glyphicon glyphicon-remove" style="font-size:18px; position:sticky;"></span><a href="DeletefromStore.aspx" id="aherf" style="bottom:25px; left:5px; background: url(klematis.jpg) repeat; color:white;" class='expand'>DeleteItem</a></li>
+  </div>
+</div>
+      <li runat="server" id="adminStatics" style="width:120px; height:35px; position:absolute; margin-left:46%;margin-top:3px;"><span class="glyphicon glyphicon-stats" style="font-size:19px; position:absolute; margin-top:15%;"></span><a href="AdminStatistics.aspx" id="aherf" class='expand'>Statics</a></li>
+      <li runat="server" id="Li1" style="width:120px; height:35px; position:absolute; margin-left:36%; margin-top:3px;"><span class="glyphicon glyphicon-search" style="font-size:18px; position:absolute; margin-top:15%;"></span><a href="Searchbyordernumber.aspx" id="aherf" class='expand'>SearchOrder</a></li>
+      <li runat="server" id="User" style="width:120px; height:35px; position:absolute; margin-left:26%; margin-top:3px;"><span class="glyphicon glyphicon-send" style="position:absolute; font-size:18px; margin-top:15%;"></span><a href="Comment.aspx" id="aherf" class='expand'>Comment</a></li>
+    </ul>
+    <div class="log" style="margin-left:68%;"><ul class="nav navbar-nav navbar-right">
+      <li style="margin-top:0px;"><span runat="server" id="gcart" class="glyphicon glyphicon-shopping-cart" style="font-size:18px; position:absolute; margin-top:12%;"></span><asp:LinkButton OnClick="Cart" Text="YourCart" runat="server" id="cart" class='expand'></asp:LinkButton></li>
+      <li style="margin-top:-20px;"><span runat="server" id="guser" class="glyphicon glyphicon-user" style="font-size:18px; position:absolute; margin-top:15%;"></span><asp:LinkButton class="expand" ID="lblRegister" runat="server" Text="SignUp" OnClick="SignUp"></asp:LinkButton></li>
+      <li style="margin-top:-20px;"><span runat="server" id="glog" class="glyphicon glyphicon-log-in" style="font-size:18px; position:absolute; margin-top:20%;"></span><asp:LinkButton class="expand" ID="lblLogin" runat="server" Text="Login" OnClick="LogIn"></asp:LinkButton></li>
+      &nbsp<li style="margin:0px 0% -10% 16%;"><asp:label ID="lbl1" runat="server" style="font-family:'Old English Text MT'; font-size: 20px; padding:2px;" Text="Welcome Back:"></asp:label><asp:label ID="lbl2" style="font-family:'Old English Text MT'; font-size: 20px; padding:2px;" runat="server" Text="" ></asp:label></li>
+       <li><asp:LinkButton ID="lbLogout" class="expand" runat="server" Text="LogOut" OnClick="LogOut"></asp:LinkButton></li> 
+        <li><asp:LinkButton ID="lblchangeacc" class="expand" runat="server" Text="Change User Info" OnClick="changeUserInfo"></asp:LinkButton></li>
+        <li><asp:LinkButton ID="lblDelete" class="expand" runat="server" Text="Delete User" OnClick="Delete"></asp:LinkButton></li>
+        <li><asp:LinkButton ID="lblchangeAdminacc" class="expand" runat="server" Text="Change Info" OnClick="changeAdminInfo"></asp:LinkButton></li>
+    </ul></div>
+  </div>
+</nav>                       
+        </div>
+        <asp:ContentPlaceHolder id="MasterPage" runat="server">
+        </asp:ContentPlaceHolder>
+ </form>
+
+</body>
+</html>
